@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="./script.js"></script>
 </head>
-<body class="app-style" onload="changeVisCount()">
-    <p id="greetingTxt">hello world</p>
-    <button class="greetingButton-style" onclick="changeGreeting()">change greetings</button>
-    <p id="visitorCountTxt" >Visitor count: 78</p>
+<body onload="changeVisCount()">
+    <div class="flex flex-col justify-center items-center h-screen" >    
+        <p id="greetingTxt" class="font-bold text-2xl py-4">hello world</p>
+        <button onclick="changeGreeting()" class="bg-blue-500 hover: bg-blue-700 text-white font-bold py-4 px-6 rounded">change greetings</button>
+        <p id="visitorCountTxt" class="font-semi-bold text-lg py-4">Visitor count: 78</p>
+    </div>
+
 </body>
 </html>
