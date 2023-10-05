@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="./script.js"></script>
 </head>
-<body class="app-style">
-    <p>hello world</p>
-    <button class="greetingButton-style">change greetings</button>
-    <p>Visitor count: 78</p>
+<body class="app-style" onload="changeVisCount()">
+    <p id="greetingTxt">hello world</p>
+    <button class="greetingButton-style" onclick="changeGreeting()">change greetings</button>
+    <p id="visitorCountTxt" >Visitor count: 78</p>
 </body>
 </html>
