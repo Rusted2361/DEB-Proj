@@ -1,12 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Greetings from "./components/Greetings";
+import Visitor from "./components/Visitors";
 
 function App() {
   return (
     <div className="App">
-       <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+      <div className="flex flex-col justify-center items-center h-screen">
+        <Greetings/>
+        <Visitor/>
+      </div>
     </div>
   );
 }
