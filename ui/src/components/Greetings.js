@@ -2,7 +2,7 @@ export default function Greeting() {
   return (
     <div>
       <p id="greetingTxt" className="font-bold text-2xl py-4">
-        hello world
+        hello world yoy
       </p>
       <button
         onclick="changeGreeting()"
