@@ -1,4 +1,5 @@
 import { Router } from "express";
+
 const router = Router();
 const greetingsList = [
     "Hello world", 
@@ -9,6 +10,7 @@ const greetingsList = [
     "Salam Dünya",
     "Здравей, свят!"
 ]
+const visitorCount = Math.floor(Math.random() * 1000)
 
 router.get('/',(req,res) =>{
     res.send('hello world!')
@@ -17,5 +19,7 @@ router.get('/',(req,res) =>{
 router.get('/greetings', async (req,res) =>{
     res.json(greetingsList)
 })
-
+router.get('/visitors', async (req,res) =>{
+    res.json(visitorCount)
+})
 export default router;
