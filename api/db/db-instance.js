@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const db = {};
 db.mongoose = mongoose;
 
-db.url = "mongodb://127.0.0.1:27017/deb"
+db.url = "mongodb://mongodb/deb"
 
 db.mongoose.connect(db.url)
 .then(()=>{
